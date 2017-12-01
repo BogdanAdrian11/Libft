@@ -6,13 +6,13 @@
 /*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/01 16:52:21 by bavram            #+#    #+#             */
-/*   Updated: 2017/12/01 17:11:55 by bavram           ###   ########.fr       */
+/*   Updated: 2017/12/01 19:09:13 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		count_words(char *s, int *max, char c)
+static int	count_words(char *s, int *max, char c)
 {
 	int		size;
 	int		i;
@@ -38,7 +38,7 @@ int		count_words(char *s, int *max, char c)
 	return (size);
 }
 
-void	split(char *s, char **str, char c)
+static void	split(char *s, char **str, char c)
 {
 	int		i;
 	int		j;
@@ -66,7 +66,7 @@ void	split(char *s, char **str, char c)
 	str[k] = 0;
 }
 
-char	**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	int		size;
 	int		word_max;

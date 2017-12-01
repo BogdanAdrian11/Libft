@@ -6,13 +6,13 @@
 /*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/21 11:50:11 by exam              #+#    #+#             */
-/*   Updated: 2017/12/01 17:41:17 by bavram           ###   ########.fr       */
+/*   Updated: 2017/12/01 19:12:10 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void	size_neg(int *size, int *negativ, int *nbr)
+static void	size_neg(int *size, int *negativ, int *nbr)
 {
 	int		temp;
 
@@ -32,7 +32,7 @@ void	size_neg(int *size, int *negativ, int *nbr)
 	}
 }
 
-char	*nbr_zero(void)
+static char	*nbr_zero(void)
 {
 	char	*str;
 
@@ -44,7 +44,7 @@ char	*nbr_zero(void)
 	return (str);
 }
 
-char	*nbr_min_int(void)
+static char	*nbr_min_int(void)
 {
 	char	*str;
 
@@ -55,7 +55,7 @@ char	*nbr_min_int(void)
 	return (str);
 }
 
-char	*ft_itoa(int nbr)
+char		*ft_itoa(int nbr)
 {
 	int		size;
 	int		negativ;

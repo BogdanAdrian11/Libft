@@ -6,13 +6,13 @@
 /*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/12 21:16:05 by bavram            #+#    #+#             */
-/*   Updated: 2017/12/01 17:39:20 by bavram           ###   ########.fr       */
+/*   Updated: 2017/12/01 19:10:25 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		power_of_ten(int nb)
+static int	power_of_ten(int nb)
 {
 	int i;
 
@@ -25,7 +25,7 @@ int		power_of_ten(int nb)
 	return (i);
 }
 
-void	ft_putnbr_fd(int n, int fd)
+void		ft_putnbr_fd(int n, int fd)
 {
 	char	c;
 	int		power;
