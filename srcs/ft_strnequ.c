@@ -1,41 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/30 15:34:36 by bavram            #+#    #+#             */
-/*   Updated: 2017/12/01 17:31:46 by bavram           ###   ########.fr       */
+/*   Created: 2017/12/01 15:27:08 by bavram            #+#    #+#             */
+/*   Updated: 2017/12/01 15:31:38 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	size_t	i;
-	char	*s;
-	char	*d;
 
-	s = (char *)src;
-	d = (char *)dst;
-	if (src < dst)
-	{
-		i = len - 1;
-		while (i > 0)
-		{
-			d[i] = s[i];
-			i--;
-		}
-		d[i] = s[i];
-		return (dst);
-	}
 	i = 0;
-	while (i < len)
+	while (s1[i] != '\0' && s2[i] != '\0' && i < n)
 	{
-		d[i] = s[i];
+		if (s1[i] != s2[i])
+			return (0);
 		i++;
 	}
-	return (dst);
+	if (i == n || (s1[i] == '\0' && s2[i] == '\0'))
+		return (1);
+	return (0);
 }

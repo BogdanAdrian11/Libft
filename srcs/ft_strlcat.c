@@ -6,7 +6,7 @@
 /*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/17 21:06:13 by bavram            #+#    #+#             */
-/*   Updated: 2017/11/30 15:56:16 by bavram           ###   ########.fr       */
+/*   Updated: 2017/12/01 17:08:11 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ size_t	ft_strlcat(char *dst, char *src, size_t size)
 			dst[l1 + i] = src[i];
 			i++;
 		}
-		dst[l1+i] = '\0';
+		dst[l1 + i] = '\0';
 	}
 	if (size >= l1)
 	{

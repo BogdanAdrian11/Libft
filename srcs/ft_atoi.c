@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/30 13:42:38 by bavram            #+#    #+#             */
-/*   Updated: 2017/11/30 13:44:31 by bavram           ###   ########.fr       */
+/*   Created: 2017/07/21 10:48:42 by exam              #+#    #+#             */
+/*   Updated: 2017/12/01 17:21:45 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int index;
 	int negativ;

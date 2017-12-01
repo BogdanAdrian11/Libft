@@ -1,41 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/30 15:34:36 by bavram            #+#    #+#             */
-/*   Updated: 2017/12/01 17:31:46 by bavram           ###   ########.fr       */
+/*   Created: 2017/12/01 16:24:44 by bavram            #+#    #+#             */
+/*   Updated: 2017/12/01 16:26:14 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void	ft_putchar_fd(char c, int fd)
 {
-	size_t	i;
-	char	*s;
-	char	*d;
-
-	s = (char *)src;
-	d = (char *)dst;
-	if (src < dst)
-	{
-		i = len - 1;
-		while (i > 0)
-		{
-			d[i] = s[i];
-			i--;
-		}
-		d[i] = s[i];
-		return (dst);
-	}
-	i = 0;
-	while (i < len)
-	{
-		d[i] = s[i];
-		i++;
-	}
-	return (dst);
+	write(fd, &c, 1);
 }
