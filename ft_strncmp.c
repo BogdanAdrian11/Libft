@@ -6,7 +6,7 @@
 /*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/17 17:44:10 by bavram            #+#    #+#             */
-/*   Updated: 2017/07/17 18:05:15 by bavram           ###   ########.fr       */
+/*   Updated: 2017/12/02 16:08:42 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	{
 		i++;
 	}
+	if (i == n)
+		i--;
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

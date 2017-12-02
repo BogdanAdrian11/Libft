@@ -6,7 +6,7 @@
 /*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/01 14:43:53 by bavram            #+#    #+#             */
-/*   Updated: 2017/12/02 14:56:31 by bavram           ###   ########.fr       */
+/*   Updated: 2017/12/02 17:07:32 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_striter(char *s, void (*f)(char *))
 	size_t	i;
 
 	i = 0;
-	if (s == NULL)
+	if (s == NULL || f == NULL)
 		return ;
 	while (s[i] != '\0')
 	{
