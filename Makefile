@@ -55,6 +55,11 @@ SRC = ft_atoi.c \
 	  ft_strsub.c \
 	  ft_strtrim.c \
 	  ft_tolower.c \
+	  ft_toupper.c \
+	  ft_convert_base.c \
+	  ft_pgcd.c \
+	  ft_strreversecase.c \
+	  ft_tolower.c \
 	  ft_toupper.c
 
 OBJ = ft_atoi.o \
@@ -113,6 +118,11 @@ OBJ = ft_atoi.o \
 	  ft_strstr.o \
 	  ft_strsub.o \
 	  ft_strtrim.o \
+	  ft_tolower.o \
+	  ft_toupper.o \
+	  ft_convert_base.o \
+	  ft_pgcd.o \
+	  ft_strreversecase.o \
 	  ft_tolower.o \
 	  ft_toupper.o
 
