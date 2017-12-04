@@ -6,7 +6,7 @@
 /*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/21 11:50:11 by exam              #+#    #+#             */
-/*   Updated: 2017/12/01 19:12:10 by bavram           ###   ########.fr       */
+/*   Updated: 2017/12/04 17:26:19 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,26 +55,26 @@ static char	*nbr_min_int(void)
 	return (str);
 }
 
-char		*ft_itoa(int nbr)
+char		*ft_itoa(int n)
 {
 	int		size;
 	int		negativ;
 	char	*str;
 
-	if (nbr == 0)
+	if (n == 0)
 		return (nbr_zero());
-	if (nbr == -2147483648)
+	if (n == -2147483648)
 		return (nbr_min_int());
-	size_neg(&size, &negativ, &nbr);
+	size_neg(&size, &negativ, &n);
 	str = (char *)malloc(sizeof(*str) * (size + 1));
 	if (str == 0)
 		return (str);
 	str[size] = '\0';
-	while (nbr != 0)
+	while (n != 0)
 	{
 		size--;
-		str[size] = nbr % 10 + '0';
-		nbr = nbr / 10;
+		str[size] = n % 10 + '0';
+		n = n / 10;
 	}
 	if (negativ == 1)
 		str[0] = '-';

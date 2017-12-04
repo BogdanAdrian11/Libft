@@ -6,18 +6,18 @@
 /*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/17 13:51:03 by bavram            #+#    #+#             */
-/*   Updated: 2017/07/17 22:39:51 by bavram           ###   ########.fr       */
+/*   Updated: 2017/12/04 17:35:15 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+char	*ft_strstr(const char *str, const char *to_find)
 {
 	int		i_str;
 	int		j_str;
 	int		i_tofind;
 
 	if (*(to_find) == '\0')
-		return (str);
+		return ((char *)str);
 	i_str = 0;
 	while (*(str + i_str) != '\0')
 	{
@@ -31,7 +31,7 @@ char	*ft_strstr(char *str, char *to_find)
 		}
 		if (j_str - i_str == i_tofind &&
 				i_tofind != 0 && *(to_find + i_tofind) == '\0')
-			return (str + i_str);
+			return ((char *)(str + i_str));
 		i_str++;
 	}
 	return ((char *)0);

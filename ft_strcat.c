@@ -6,11 +6,11 @@
 /*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/17 20:43:12 by bavram            #+#    #+#             */
-/*   Updated: 2017/07/17 20:50:44 by bavram           ###   ########.fr       */
+/*   Updated: 2017/12/04 16:52:41 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
 	int n;
 	int i;

@@ -6,14 +6,16 @@
 /*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/17 20:53:00 by bavram            #+#    #+#             */
-/*   Updated: 2017/07/17 20:55:24 by bavram           ###   ########.fr       */
+/*   Updated: 2017/12/04 17:29:22 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncat(char *dest, char *src, int nb)
+#include "libft.h"
+
+char	*ft_strncat(char *dest, const char *src, size_t nb)
 {
-	int n;
-	int i;
+	size_t n;
+	size_t i;
 
 	n = 0;
 	while (*(dest + n) != '\0')

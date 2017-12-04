@@ -6,11 +6,11 @@
 /*   By: bavram <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/17 12:28:10 by bavram            #+#    #+#             */
-/*   Updated: 2017/07/17 13:13:16 by bavram           ###   ########.fr       */
+/*   Updated: 2017/12/04 16:45:59 by bavram           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	int	index;
 
